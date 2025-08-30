@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Scripts.Drag
 {
-    public interface IDragHandler
+    public interface IDraggable
     {
         void OnDrag(Transform target);
 
