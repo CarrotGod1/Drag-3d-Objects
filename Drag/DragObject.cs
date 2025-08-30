@@ -15,7 +15,7 @@ namespace Scripts.Drag
         public void OnDrag(Transform target)
         {
             rb.MovePosition(target.position);
-            rb.MoveRotation(target.rotation);
+            //rb.MoveRotation(target.rotation);
         }
     }
 }
