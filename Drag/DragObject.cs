@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Scripts.Drag
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class DragObject : MonoBehaviour, IDragHandler
+    public class DragObject : MonoBehaviour, IDraggable
     {
         private Rigidbody rb;
 
