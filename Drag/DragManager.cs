@@ -9,7 +9,7 @@ namespace Scripts.Drag
         [SerializeField] private float reachDistance = 10f;
         [SerializeField] private Transform dragPosition;
 
-        private IDragHandler dragHandler;
+        private IDraggable dragHandler;
         private bool isDragging = false;
 
         private void Awake()
@@ -30,7 +30,7 @@ namespace Scripts.Drag
 
                 if (Physics.Raycast(ray, out hit, reachDistance))
                 {
-                    if (hit.collider.TryGetComponent(out IDragHandler _dragHandler) && !isDragging)
+                    if (hit.collider.TryGetComponent(out IDraggable _dragHandler) && !isDragging)
                     {
                         dragHandler = _dragHandler;
                         isDragging = true;
